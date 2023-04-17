@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;700&display=swap");
+* {
+  font-family: "Noto Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  background-color: #131947;
+  position: relative;
+}
+body .navbar nav {
+  width: 100%;
+  height: 10vh;
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+body .navbar nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+body .navbar nav ul li {
+  margin: 0 10px;
+}
+body .navbar nav ul li a {
+  color: #131947;
+}
+body .navbar nav ul .login {
+  margin-left: auto;
+}
+body .navbar nav ul .login a {
+  color: #F2B12E;
+  font-style: none;
+  text-decoration: none;
+}
+body .navbar nav ul .login button {
+  padding: 2vh 5vh;
+  border: 1px solid;
+  border-radius: 1vh;
+  background-color: #0F1439;
+}/*# sourceMappingURL=style.css.map */

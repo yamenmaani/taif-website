@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* Style for the buttons */
+      .path-btn {
+        display: inline-block;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        margin-right: 10px;
+      }
+      
+      .path-btn svg {
+        width: 50px;
+        height: 50px;
+        fill: #333;
+      }
+      
+      .path-btn:hover svg {
+        fill: #666;
+      }
+      
+      /* Style for the paths */
+      #path1 {
+        fill: #FFC107;
+      }
+      
+      #path2 {
+        fill: #E91E63;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Button 1 -->
+    <button class="path-btn">
+      <svg viewBox="0 0 100 100">
+        <path id="path1" d="M50 0 A50 50 0 1 1 50 100 A50 50 0 1 1 50 0 Z" />
+      </svg>
+    </button>
+    
+    <!-- Button 2 -->
+    <button class="path-btn">
+      <svg viewBox="0 0 100 100">
+        <path id="path2" d="M50 20 L20 80 L80 80 Z" />
+      </svg>
+    </button>
+  </body>
+</html>
