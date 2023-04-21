@@ -1,64 +1,92 @@
 * {
     font-family: 'Noto Sans', sans-serif;
     @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;700&display=swap');
-
     $primary-color: #131947;
     $dark-primary-color: #0F1439;
     $special-color: #F2B12E;
     $dark-special-color: #CC9A34;
+    $text-size: 20px;
+
     font-family: 'Noto Sans', sans-serif;
     margin: 0;
     padding: 0;
     list-style: none;
-
+    
     body {
         background-color: $primary-color;
-        position: relative;
         .navbar {
             nav {
-            width: 100%;
-            height: 10vh;
-            background-color: white;
-            display: flex;
-            align-items: center;
-                ul {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    flex-grow: 1;
-                    
-                    li {
-                    margin: 0 10px;
-                        a {
-                            color: $primary-color;
+                width: 100%;
+                height: 10vh;
+                background-color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center ;
+                    ul {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-grow: 1;
+                        
+                        li {
+                        margin: 0 10px;
+                            a {
+                                color: $primary-color;
+                            }
                         }
-                    }
-                    .login {
-                        margin-left: auto;
-                        a {
-                            color: $special-color;
-                            font-style: none;
-                            text-decoration: none;
-                        }
-                        button {
-                            padding: 2vh 5vh;
-                            border: 1px solid;
-                            border-radius: 1vh;
-                            background-color: $dark-primary-color;
-                            
+                        .login {
+                            margin-left: auto;
+                            a {
+                                color: $special-color;
+                                font-style: none;
+                                text-decoration: none;
+                            }
+                            button {
+                                padding: 2vh 5vh;
+                                border: 1px solid;
+                                border-radius: 1vh;
+                                background-color: $dark-primary-color;
+                            }
                         }
                     }
                 }
             }
-        }
-            form {
-                color: $special-color;
-                margin: auto;
-                width: 50%;
-                padding: 20px;
-                border: 1px solid #ccc;
-                border-radius: 10px;
-            
+            .page{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                padding: 2vh;
+                gap: 2vh;
+                h1{
+                    color: white;
+                }
+                form {
+                    color: $special-color;
+                    margin: auto;
+                    width: 50%;
+                    padding: 20px;
+                    border: 1px solid #ccc;
+                    border-radius: 10px;
+                    input{
+                        display: flex;
+                        flex-direction: row;
+                    }
+                    .top{
+                        display: flex;
+                        position: relative;
+                        #fileNumber{
+                            width: 300vh;
+                            color: black;
+                            display:inline;
+                            position: relative;
+                        }
+                        #patientName{
+                            right: 0;
+                        }
+                        label{
+                            width: 100%;
+                        }
+                    }
                 .teeth{
                     .special-num-color *{
                         fill: $dark-special-color;
@@ -66,7 +94,7 @@
                     .normal-num-color{
                         fill: $dark-special-color
                     }
-
+                    padding: 1vh 0 ;
                     #_11:hover {
                         fill: $special-color;
                     }
@@ -203,7 +231,31 @@
                     }
                     
                 }
-            
+                .mid{
+                    display: flex;
+                    align-items: center;
+                    gap: 1vh;
+                    label{
+                        width: 40%;
+                    }
+                    #type-of-work{
+                        width: 50%;
+                        
+                    }
+                }
+                
+                .bottom{
+                    display: flex;
+                    gap: 1vh;
+                    align-items: center;
+                    margin: 1vh;
+                    #test{
+                        width: 5vh;
+                        height: 5vh;
+                        background: $special-color;
+                    }
+                }
+                
                 label {
                     display: block;
                     font-weight: bold;
@@ -211,6 +263,7 @@
                 }
             
                 input[type="text"], select, textarea, input[type="color"] {
+                    font-size: $text-size;
                     padding: 5px;
                     width: 100%;
                     border-radius: 5px;
@@ -218,10 +271,21 @@
                     box-sizing: border-box;
                     margin-bottom: 10px;
                 }
-            
+                
                 input[type="checkbox"] {
                     margin-right: 5px;
                 }
+                .button{
+                    // position: absolute;
+                    background-color: $special-color;
+                    width: 25%;
+                    // right: 50%;
+                    transform: translateX(50%);
+                    font-size:$text-size;
+                    border-radius: 5px;
+                    
+                }
             }
         }
+    }
 }

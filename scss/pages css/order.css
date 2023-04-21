@@ -8,7 +8,6 @@
 }
 * body {
   background-color: #131947;
-  position: relative;
 }
 * body .navbar nav {
   width: 100%;
@@ -16,6 +15,7 @@
   background-color: white;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 * body .navbar nav ul {
   display: flex;
@@ -43,7 +43,17 @@
   border-radius: 1vh;
   background-color: #0F1439;
 }
-* body form {
+* body .page {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 2vh;
+  gap: 2vh;
+}
+* body .page h1 {
+  color: white;
+}
+* body .page form {
   color: #F2B12E;
   margin: auto;
   width: 50%;
@@ -51,126 +61,172 @@
   border: 1px solid #ccc;
   border-radius: 10px;
 }
-* body form .teeth .special-num-color * {
+* body .page form input {
+  display: flex;
+  flex-direction: row;
+}
+* body .page form .top {
+  display: flex;
+  position: relative;
+}
+* body .page form .top #fileNumber {
+  width: 300vh;
+  color: black;
+  display: inline;
+  position: relative;
+}
+* body .page form .top #patientName {
+  right: 0;
+}
+* body .page form .top label {
+  width: 100%;
+}
+* body .page form .teeth {
+  padding: 1vh 0;
+}
+* body .page form .teeth .special-num-color * {
   fill: #CC9A34;
 }
-* body form .teeth .normal-num-color {
+* body .page form .teeth .normal-num-color {
   fill: #CC9A34;
 }
-* body form .teeth #_11:hover {
+* body .page form .teeth #_11:hover {
   fill: #F2B12E;
 }
-* body form .teeth #_12:hover {
+* body .page form .teeth #_12:hover {
   fill: #F2B12E;
 }
-* body form .teeth #_13:hover {
+* body .page form .teeth #_13:hover {
   fill: #F2B12E;
 }
-* body form .teeth #_14:hover {
+* body .page form .teeth #_14:hover {
   fill: #F2B12E;
 }
-* body form .teeth #_15:hover {
+* body .page form .teeth #_15:hover {
   fill: #F2B12E;
 }
-* body form .teeth #_16:hover path {
+* body .page form .teeth #_16:hover path {
   fill: #F2B12E;
 }
-* body form .teeth #_17:hover path {
+* body .page form .teeth #_17:hover path {
   fill: #F2B12E;
 }
-* body form .teeth #_18:hover path {
+* body .page form .teeth #_18:hover path {
   fill: #F2B12E;
 }
-* body form .teeth #_18:focus path {
+* body .page form .teeth #_18:focus path {
   fill: dark #CC9A34;
 }
-* body form .teeth #_19:hover {
+* body .page form .teeth #_19:hover {
   fill: #F2B12E;
 }
-* body form .teeth #_21:hover {
+* body .page form .teeth #_21:hover {
   fill: #F2B12E;
 }
-* body form .teeth #_22:hover {
+* body .page form .teeth #_22:hover {
   fill: #F2B12E;
 }
-* body form .teeth #_23:hover {
+* body .page form .teeth #_23:hover {
   fill: #F2B12E;
 }
-* body form .teeth #_24:hover {
+* body .page form .teeth #_24:hover {
   fill: #F2B12E;
 }
-* body form .teeth #_25:hover {
+* body .page form .teeth #_25:hover {
   fill: #F2B12E;
 }
-* body form .teeth #_26:hover path {
+* body .page form .teeth #_26:hover path {
   fill: #F2B12E;
 }
-* body form .teeth #_27:hover path {
+* body .page form .teeth #_27:hover path {
   fill: #F2B12E;
 }
-* body form .teeth #_28:hover path {
+* body .page form .teeth #_28:hover path {
   fill: #F2B12E;
 }
-* body form .teeth #_29:hover {
+* body .page form .teeth #_29:hover {
   fill: #F2B12E;
 }
-* body form .teeth #_31:hover {
+* body .page form .teeth #_31:hover {
   fill: #F2B12E;
 }
-* body form .teeth #_32:hover {
+* body .page form .teeth #_32:hover {
   fill: #F2B12E;
 }
-* body form .teeth #_33:hover {
+* body .page form .teeth #_33:hover {
   fill: #F2B12E;
 }
-* body form .teeth #_34:hover {
+* body .page form .teeth #_34:hover {
   fill: #F2B12E;
 }
-* body form .teeth #_35:hover {
+* body .page form .teeth #_35:hover {
   fill: #F2B12E;
 }
-* body form .teeth #_36:hover path {
+* body .page form .teeth #_36:hover path {
   fill: #F2B12E;
 }
-* body form .teeth #_37:hover path {
+* body .page form .teeth #_37:hover path {
   fill: #F2B12E;
 }
-* body form .teeth #_38:hover path {
+* body .page form .teeth #_38:hover path {
   fill: #F2B12E;
 }
-* body form .teeth #_39:hover {
+* body .page form .teeth #_39:hover {
   fill: #F2B12E;
 }
-* body form .teeth #_41:hover {
+* body .page form .teeth #_41:hover {
   fill: #F2B12E;
 }
-* body form .teeth #_42:hover {
+* body .page form .teeth #_42:hover {
   fill: #F2B12E;
 }
-* body form .teeth #_43:hover {
+* body .page form .teeth #_43:hover {
   fill: #F2B12E;
 }
-* body form .teeth #_44:hover {
+* body .page form .teeth #_44:hover {
   fill: #F2B12E;
 }
-* body form .teeth #_45:hover {
+* body .page form .teeth #_45:hover {
   fill: #F2B12E;
 }
-* body form .teeth #_46:hover path {
+* body .page form .teeth #_46:hover path {
   fill: #F2B12E;
 }
-* body form .teeth #_47:hover path {
+* body .page form .teeth #_47:hover path {
   fill: #F2B12E;
 }
-* body form .teeth #_48:hover path {
+* body .page form .teeth #_48:hover path {
   fill: #F2B12E;
 }
-* body form label {
+* body .page form .mid {
+  display: flex;
+  align-items: center;
+  gap: 1vh;
+}
+* body .page form .mid label {
+  width: 40%;
+}
+* body .page form .mid #type-of-work {
+  width: 50%;
+}
+* body .page form .bottom {
+  display: flex;
+  gap: 1vh;
+  align-items: center;
+  margin: 1vh;
+}
+* body .page form .bottom #test {
+  width: 5vh;
+  height: 5vh;
+  background: #F2B12E;
+}
+* body .page form label {
   display: block;
   font-weight: bold;
   margin-bottom: 5px;
 }
-* body form input[type=text], * body form select, * body form textarea, * body form input[type=color] {
+* body .page form input[type=text], * body .page form select, * body .page form textarea, * body .page form input[type=color] {
+  font-size: 20px;
   padding: 5px;
   width: 100%;
   border-radius: 5px;
@@ -178,6 +234,13 @@
   box-sizing: border-box;
   margin-bottom: 10px;
 }
-* body form input[type=checkbox] {
+* body .page form input[type=checkbox] {
   margin-right: 5px;
+}
+* body .page form .button {
+  background-color: #F2B12E;
+  width: 25%;
+  transform: translateX(50%);
+  font-size: 20px;
+  border-radius: 5px;
 }/*# sourceMappingURL=order.css.map */
