@@ -3,26 +3,46 @@ let dark_primary_color = "#0F1439";
 let special_color = "#F2B12E";
 let dark_special_color = "#CC9A34";
 function submitForm() {
-    const fileNumber = document.getElementById("fileNumber").value;
-    const patientName = document.getElementById("patientName").value;
-    const workType = document.getElementById("type-of-work").value;
-    const remarks = document.getElementById("remarks").value;
+    const fileNumber = document.getElementById("fileNumber");
+    const patientName = document.getElementById("patientName");
+    const workType = document.getElementById("type-of-work");
+    const remarks = document.getElementById("remarks");
     const test = document.getElementById("test").checked;
-    const color = document.getElementById("color-list").value;
+    const color = document.getElementById("color");
+    const top = document.getElementById("top");
+    const mid = document.getElementById("mid");
+    const bot = document.getElementById("bot");
 
-    const formDataDiv = document.getElementById("formData");
-    formDataDiv.innerHTML = `<p>File Number: ${fileNumber}</p>
-                            <p>Patient Name: ${patientName}</p>
-                            <p>Type of Work: ${workType}</p>
-                            <p>Remarks: ${remarks}</p>
-                            <p>Test: ${test}</p>
-                            <p>Color: ${color}</p>`;
-    console.log("File Number: " + fileNumber);
-    console.log("Patient Name: " + patientName);
-    console.log("Type of Work: " + workType);
-    console.log("Remarks: " + remarks);
-    console.log("Test: " + test);
-    console.log("Color: " + color);
+    fileNumber1 = fileNumber.value;
+    patientName1 = patientName.value;
+    workType1 = workType.value;
+    remarks1 = remarks.value;
+    test1 = test.checked;
+    color1 = color.value;
+    top1 = top.value;
+    mid1 = mid.value;
+    bot1 = bot.value;
+
+    console.log("File Number: " + fileNumber1);
+    console.log("Patient Name: " + patientName1);
+    console.log("Type of Work: " + workType1);
+    console.log("Test: " + test1);
+    console.log("Color: " + color1);
+    console.log("Remarks: " + remarks1);
+    console.log("top: " + top1)
+    console.log("mid: " + mid1)
+    console.log("bot: " + bot1)
+
+    fileNumber.value = '';
+    patientName.value = '';
+    workType.value = '';
+    remarks.value = '';
+    test.value = '';
+    color.value = '';
+    top.value = '';
+    mid.value = '';
+    bot.value = '';
+
 }
 function _11(evt) {
     console.log('teeth 11 choosed');
@@ -219,4 +239,21 @@ function _47(evt) {
 function _48(evt) {
     console.log('teeth 48 choosed');
     document.getElementById("_48").classList.toggle("special-num-color");
+}
+
+
+
+//  tooth parts
+
+function atop(evt){
+    console.log("top choosen");
+    document.getElementById("top").classList.toggle("select-color")
+}
+function amid(evt){
+    console.log("mid choosen");
+    document.getElementById("mid").classList.toggle("select-color")
+}
+function abottom(evt){
+    console.log("bottom choosen");
+    document.getElementById("bottom").classList.toggle("select-color")
 }

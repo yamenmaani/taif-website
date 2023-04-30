@@ -1,6 +1,7 @@
 * {
     font-family: 'Noto Sans', sans-serif;
     @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;700&display=swap');
+
     $primary-color: #131947;
     $dark-primary-color: #0F1439;
     $special-color: #F2B12E;
@@ -13,12 +14,18 @@
     list-style: none;
     
     body {
+        a{
+            color: white;
+        }
         background-color: $primary-color;
         .navbar {
-            padding: 1vh;
+            // width: 100%;
+            padding: 1.5vh;
+            // position: fixed;
             background-color: white;
+            z-index: 999;
             img{
-                height: 10vh;
+                height: 9vh;
             }
             nav {
                 width: 100%;
@@ -28,19 +35,34 @@
                 display: flex;
                 align-items: center;
                 justify-content: space-around ;
-                    ul {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        flex-grow: 1;
-                        
-                        li {
+                ul {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-grow: 1;
+                    li {
+                        .order{
+                            color: $special-color;
+                        }
                         margin: 0 10px;
-                            a {
-                                color: $primary-color;
-                            }
+                        a {
+                            margin: 1vh;
+                            color: $primary-color;
+                            font-weight: bold;
+                        }
+                        a:hover{
+                            color: $special-color;
                         }
                     }
+                }
+                .lang{
+                    margin: 2vh;
+                    a{
+                        color: black;
+                        margin: 1vh;
+                        font-weight: bold;
+                    }
+                }
                     .login {
                         color: $special-color;
                         font-style: none;
@@ -63,7 +85,7 @@
                 }
                 form {
                     color: $special-color;
-                    margin: auto;
+
                     width: 50%;
                     padding: 20px;
                     border: 1px solid #ccc;
@@ -73,29 +95,28 @@
                         flex-direction: row;
                     }
                     .top{
+                        display: flex;
+                        position: relative;
+                        justify-content: center;
+                        align-items: center;
+                        gap:1vh;
                         .number{
-                            display: flex;
-                            position: relative;
-                            justify-content: center;
-                            gap: 2vh;
-
                             // align-items: center;
-                            margin: 1vh;
                             #fileNumber{
-                                // width: 300vh;
+                                width: 100%;
                                 color: black;
-                                display:inline;
-                                position: relative;
                             }
+                        }
+
+                        .name{
                             #patientName{
-                                width: 30vh;
-                                right: 0;
+                                width: 100%;
                             }
                             label{
                                 width: 100%;
                             }
                         }
-                        }
+                    }
                 .teeth{
                     .special-num-color *{
                         fill: $dark-special-color;
@@ -244,25 +265,80 @@
                     align-items: center;
                     justify-content: center;
                     gap: 1vh;
+                    .work-type{
+                        #type-of-work{
+                            width: 25%;                            
+                        }
+                    }
                     label{
-                        // width: 100%.
                         white-space: nowrap;
                     }
-                    #type-of-work{
-                        width: 50%;
-                        
+                    .color{
+                        width: 25%;
+                    }
+                    #test{
+                        width: 5vh;
+                        height: 5vh;
+                        background: $special-color;
                     }
                 }
                 
                 .bottom{
                     display: flex;
-                    gap: 1vh;
+                    justify-content: center;
                     align-items: center;
+                    gap: 5vh;
                     margin: 1vh;
-                    #test{
-                        width: 5vh;
-                        height: 5vh;
-                        background: $special-color;
+                    textarea {
+                        height: 15vh;
+                        resize: none;
+                    }
+                    .tooth-parts{
+                        display: flex;
+                        justify-content: center;
+                        margin-top: 1vh;
+                        .top{
+                            position: absolute;
+                            width: 13vh;
+                            background-color: transparent;
+                            color: white;
+                            border: none;
+                            text-align: center;
+                        }
+                        .mid{
+                            position: absolute;
+                            width: 15vh;
+                            transform: translatey(6vh);
+                            background-color: transparent;
+                            border: none;
+                            color: white;
+                            text-align: center;
+                        }
+                        .bot{
+                            position: absolute;
+                            width: 15vh;
+                            transform: translatey(11.5vh);
+                            background-color: transparent;
+                            border: none;
+                            color: white;
+                            text-align: center;
+                            }
+                            svg{
+                                width: 15vh;
+                            .select-color *{
+                                fill: $dark-special-color;
+                                opacity: 1;
+                            }
+                            #top:hover *{
+                                fill: $special-color;
+                            }
+                            #mid:hover *{
+                                fill: $special-color;
+                            }
+                            #bottom:hover *{
+                                fill: $special-color;
+                            }
+                        }
                     }
                 }
 
@@ -271,7 +347,6 @@
                     justify-content: center;
                     align-items: center;
                     width: 100%;
-                    // border: 2px solid;
                     .button{
                         padding: 1vh 5vh;
                         background-color: $special-color;
@@ -292,11 +367,12 @@
                     border-radius: 5px;
                     border: 1px solid #ccc;
                     box-sizing: border-box;
-                    margin-bottom: 10px;
                 }
                 
                 input[type="checkbox"] {
                     margin-right: 5px;
+                    color: $special-color;
+                    accent-color: $special-color;
                 }
             }
         }

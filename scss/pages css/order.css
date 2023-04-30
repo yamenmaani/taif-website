@@ -9,12 +9,16 @@
 * body {
   background-color: #131947;
 }
+* body a {
+  color: white;
+}
 * body .navbar {
-  padding: 1vh;
+  padding: 1.5vh;
   background-color: white;
+  z-index: 999;
 }
 * body .navbar img {
-  height: 10vh;
+  height: 9vh;
 }
 * body .navbar nav {
   width: 100%;
@@ -32,8 +36,24 @@
 * body .navbar nav ul li {
   margin: 0 10px;
 }
+* body .navbar nav ul li .order {
+  color: #F2B12E;
+}
 * body .navbar nav ul li a {
+  margin: 1vh;
   color: #131947;
+  font-weight: bold;
+}
+* body .navbar nav ul li a:hover {
+  color: #F2B12E;
+}
+* body .navbar nav .lang {
+  margin: 2vh;
+}
+* body .navbar nav .lang a {
+  color: black;
+  margin: 1vh;
+  font-weight: bold;
 }
 * body .navbar nav .login {
   color: #F2B12E;
@@ -56,7 +76,6 @@
 }
 * body .page form {
   color: #F2B12E;
-  margin: auto;
   width: 50%;
   padding: 20px;
   border: 1px solid #ccc;
@@ -66,23 +85,21 @@
   display: flex;
   flex-direction: row;
 }
-* body .page form .top .number {
+* body .page form .top {
   display: flex;
   position: relative;
   justify-content: center;
-  gap: 2vh;
-  margin: 1vh;
+  align-items: center;
+  gap: 1vh;
 }
 * body .page form .top .number #fileNumber {
+  width: 100%;
   color: black;
-  display: inline;
-  position: relative;
 }
-* body .page form .top .number #patientName {
-  width: 30vh;
-  right: 0;
+* body .page form .top .name #patientName {
+  width: 100%;
 }
-* body .page form .top .number label {
+* body .page form .top .name label {
   width: 100%;
 }
 * body .page form .teeth {
@@ -208,22 +225,77 @@
   justify-content: center;
   gap: 1vh;
 }
+* body .page form .mid .work-type #type-of-work {
+  width: 25%;
+}
 * body .page form .mid label {
   white-space: nowrap;
 }
-* body .page form .mid #type-of-work {
-  width: 50%;
+* body .page form .mid .color {
+  width: 25%;
 }
-* body .page form .bottom {
-  display: flex;
-  gap: 1vh;
-  align-items: center;
-  margin: 1vh;
-}
-* body .page form .bottom #test {
+* body .page form .mid #test {
   width: 5vh;
   height: 5vh;
   background: #F2B12E;
+}
+* body .page form .bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5vh;
+  margin: 1vh;
+}
+* body .page form .bottom textarea {
+  height: 15vh;
+  resize: none;
+}
+* body .page form .bottom .tooth-parts {
+  display: flex;
+  justify-content: center;
+  margin-top: 1vh;
+}
+* body .page form .bottom .tooth-parts .top {
+  position: absolute;
+  width: 13vh;
+  background-color: transparent;
+  color: white;
+  border: none;
+  text-align: center;
+}
+* body .page form .bottom .tooth-parts .mid {
+  position: absolute;
+  width: 15vh;
+  transform: translatey(6vh);
+  background-color: transparent;
+  border: none;
+  color: white;
+  text-align: center;
+}
+* body .page form .bottom .tooth-parts .bot {
+  position: absolute;
+  width: 15vh;
+  transform: translatey(11.5vh);
+  background-color: transparent;
+  border: none;
+  color: white;
+  text-align: center;
+}
+* body .page form .bottom .tooth-parts svg {
+  width: 15vh;
+}
+* body .page form .bottom .tooth-parts svg .select-color * {
+  fill: #CC9A34;
+  opacity: 1;
+}
+* body .page form .bottom .tooth-parts svg #top:hover * {
+  fill: #F2B12E;
+}
+* body .page form .bottom .tooth-parts svg #mid:hover * {
+  fill: #F2B12E;
+}
+* body .page form .bottom .tooth-parts svg #bottom:hover * {
+  fill: #F2B12E;
 }
 * body .page form .button {
   display: flex;
@@ -248,8 +320,9 @@
   border-radius: 5px;
   border: 1px solid #ccc;
   box-sizing: border-box;
-  margin-bottom: 10px;
 }
 * body .page form input[type=checkbox] {
   margin-right: 5px;
+  color: #F2B12E;
+  accent-color: #F2B12E;
 }/*# sourceMappingURL=order.css.map */
